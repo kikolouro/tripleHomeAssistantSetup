@@ -1,0 +1,15 @@
+version: "3.2"
+services:
+  triplehasetup:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    container_name: triplehasetup
+    volumes:
+      - ./certs:/certs
+      - ./:/app
+    restart: always
+    ports:
+      - "80:5000"
+    environment:
+      - "PYTHONUNBUFFERED=1"
