@@ -1,43 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Joyn-Group KNX</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+		/>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyn-Group KNX</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
-</head>
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}"/>
 
-<body>
-    <div class="container-flex">
-        <div class="row">
-            <div class="col">
-                <h1>KNX Piso 1</h1>
-                <div class="embed-responsive embed-responsive-1by1">
-                    <iframe class="embed-responsive-item" src="http://172.16.50.80:8123"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col">
-                <h1>KNX Piso 1 Open Space</h1>
-                <div class="embed-responsive embed-responsive-1by1">
-                    <iframe class="embed-responsive-item" src="http://172.16.50.79:8123"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="col">
-                <h1>KNX Copa</h1>
-                <div class="embed-responsive embed-responsive-1by1">
-                    <iframe class="embed-responsive-item" src="http://172.16.50.75:8123"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+	</head>
 
+	<body>
+		<div class="container-flex">
+			<div class="row">
+				<div class="col-4">
+					<h5>KNX Piso 1</h5>
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe
+							class="embed-responsive-item"
+							style="height=100vh"
+							src="http://172.16.50.80:8123"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+				<div class="col-4">
+					<h5>KNX Piso 1 Open Space</h5>
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe
+							class="embed-responsive-item"
+							src="http://172.16.50.79:8123"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+				<div class="col-4">
+					<h5>KNX Copa</h5>
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe
+							class="embed-responsive-item"
+							src="http://172.16.50.75:8123"
+							allowfullscreen
+						></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
